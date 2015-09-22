@@ -1,0 +1,15 @@
+# Boston Housing
+
+The *mlbench* package contains the data set `BostonHousing` See Description. 
+Create a linear regression model that predicts the medium home value of the 
+census tract as a function of the relevant predictors. 
+
+```r
+library(mlbench)
+library(magrittr)
+library(ggplot2)
+data(BostonHousing)
+# Place your code here:
+```
+
+
