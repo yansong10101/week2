@@ -91,3 +91,8 @@ ggplot( aes(x=FE, y=fit.1$fitted.values), data=cars2010 ) + geom_point() +
   ylab("Estimated Fuel Economy") + 
   theme( plot.background = element_blank() )
 
+# Stepwise Example
+
+library(MASS)
+
+f <- stepAIC( fit.3, scope=list(lower=FE~1, upper=FE~.), direction="backward" ) 
