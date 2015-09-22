@@ -12,7 +12,17 @@ Github: https://github.com/csx460
 
 All assignments should be submitted to the github repository using a branch created wit you initials. For Example,
 
-    git checkout -b ctb 
+    git clone https://github.com/csx460/week2
+    git checkout -b ctb
+    (work)
+    git add ...
+    git commit ...
+    git push into your repo and issue a pull request.    
+
+
+Place answers directly in the files.
+
+Feel free to push your answers when you are complete 
 
 
 Assignments:
