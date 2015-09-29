@@ -1,0 +1,48 @@
+1. Boston Housing 
+
+# R scripts
+
+# load libraries and data
+library(mlbench)
+library(magrittr)
+library(ggplot2)
+data(BostonHousing)
+
+# view summary of the data
+summary(BostonHousing)
+
+# try to get linear model
+fit <- lm(medv ~ ., data=BostonHousing)
+
+# see summary to know more related data columns
+summary(fit)
+
+# RMSE function to test each model
+rmse(fit$fitted.values, BostonHousing$medv)
+
+# Final linear model with specific related parameters
+fit <- lm(medv ~ . -age -indus, data=BostonHousing)
+
+# function for generating plots diagram 
+ggplot( aes(x=medv, y=fit.4$fitted.values), data=BostonHousing ) + geom_point() + coord_equal( ylim=c(0,70), xlim=c(0,70) ) + geom_abline( slope=1, intercept=0, color="red") + xlab( "medium home value") + ylab("Estimated medium value") + theme( plot.background = element_blank() )
+
+
+
+
+2. When speaking of Machine Learning, there are two functions or algorithms involved. Describe and differentiate the algorithms from the function.
+
+Regression and Classification
+
+Regression : The output variable takes continuous values
+
+Classification : The output variable takes class labels
+
+
+
+
+3. RMSE and MAE
+ - Why is RMSE preferrable to MAE?
+RMSE gives a relatively high weight to large errors. It is most useful when large errors are particularly undesirable.
+
+ - When is MAE better?
+MAE is a more natural measure of average error, It measures accuracy for continuous variables
