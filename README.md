@@ -7,3 +7,7 @@ IN this module we begin the exploration of machine learning. The student should 
 * What 3 things do all ML algorithms share in common? 
 * How Models are Evaluated? And Compared?  
 * How to use `lm` to build and evaluate linear regression models
+
+This class is fun.
+
+
